@@ -130,6 +130,10 @@ a {
     justify-content: space-between;
 }
 
+.wrap {
+    flex-wrap: wrap;
+}
+
 /*Text*/
 
 .text-white {
@@ -211,6 +215,24 @@ header a {
     }
     .d-none {
         display: inline-block;
+    }
+    .grid {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .col {
+        width: calc(100% / 3);
+    }
+    .p-top2 {
+        padding-top: 20px;
+    }
+    .text-purple {
+        font-size: 2em;
+    }
+    .img {
+        float: left;
+        padding-top: 20px;
+        padding-right: 10px;
     }
 }
 
