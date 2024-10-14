@@ -237,7 +237,36 @@ header a {
 }
 
 @media screen and (min-width: 992px) {
-    .space-between {
+    main {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .text-purple {
+        font-size: 3em;
+    }
+    .grid {
+        padding-bottom: 27px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    h4 {
+        margin-top: 20px;
+    }
+    .text-content:first-child {
+        padding-top: 0;
+    }
+    .section {
+        display: flex;
         justify-content: space-between;
+    }
+    #video {
+        width: 70%;
+    }
+    .text-content {
+        width: 30%;
+    }
+    .section {
+        height: 500px;
     }
 }
