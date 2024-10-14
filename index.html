@@ -7,38 +7,73 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <title>Giallo Booleano</title>
 </head>
 <body>
     <!--header-->
-    <header class="bg-white d-flex justify-center align-center space-between">
+    <header class="p-20 bg-white d-flex justify-center align-center start">
         <h1>Giallo Booleano</h1>
     </header>
     <!--main-->
-    <main>
-        <div class="container debug">
+    <main class="p-20">
+        <div class="container">
             <section>
-                <div>titolo</div>
-                <div id="video">
-                    <iframe width="100%" height="100%" src="0" frameborders="0"></iframe>
+                <div class="uppercase text-grey p-top">dolci e desserts</div>
+                <div class="text-purple p-top">
+                    <span>Tiramisù</span>
+                    <span class="d-none"> (Dolce Tradizionale)</span>
+                </div>
+                <div id="video" class="p-top">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/JVT900H6s0g?si=8B2xVApuH0KiMDSx" title="Youtube video player" frameborders="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
                 <div class="text-content">
-                    text
+                    <ul class="bg-white p-left">
+                        <li class="p-top p-bottom"><h4>In breve</h4></li>
+                        <li>Difficoltà: <strong>Facile</strong></li>
+                        <li class="p-top">Tempo: <strong>40 min</strong></li>
+                        <li class="p-top">Porzione per: <strong>8 persone</strong></li>
+                        <li class="p-top">Costo: Contenuto</li>
+                        <li class="p-top p-bottom"><strong>Note:</strong> +2 ore di riposo in frigo</li>
+                    </ul>
                 </div>
+                <ul class="p-top d-flex space-between">
+                    <li class="logo1"><i class="fa-brands fa-facebook"></i></li>
+                    <li class="logo1"><i class="fa-brands fa-twitter"></i></li>
+                    <li class="logo2"><i class="fa-brands fa-instagram"></i></li>
+                    <li class="logo2"><i class="fa-brands fa-pinterest"></i></li>
+                    <li class="logo2"><i class="fa-brands fa-youtube"></i></li>
+                </ul>
             </section>
-            <aside class="debug">
-                pubblicità
+            <aside class="d-none">
+                <img src="img/banner.png" alt="pubblicità">
             </aside>
-            <section class="debug">
-                articolo sotto
+            <section>
+                <div class="Presentation p-top p-bottom">
+                    <h3>Presentation</h3>
+                    <hr>
+                    <div class="img">
+                        <img src="img/tiramisu.jpg" alt="tiramisù">
+                    </div>
+                    <p class="p-top">Back in the day, grandmothers used to prepare a breakfast that we might call humble today, but was considered very rich at the time! Today the recipe is still unchanged, just break a very fresh egg into a glass, beat it with sugar, and add coffee or hot milk, for children, or <strong>Marsala wine</strong> or aniseed for adults. This marvelous cream gave rise to mascarpone cream used to make <strong>Tiramisù</strong> (mascarpone cheese and ladyfingers dessert). This is the <strong>best Italian dessert</strong>, the most popular and beloved of them all, and it has also birthed many other versions, even an egg-free Tiramisù! There is also a strawberry and Nutella tiramisù! Although the origins of this famous dessert are unclear, because it is disputed between the regions of Veneto, Friuli-Venezia Giulia, Piedmont, and Tuscany, it remains a cornerstone of Italian cuisine and it's widely prepared from North to South. Unfortunately, we weren't able to find out who invented it, but we can certainly teach you how to prepare your best tiramisù ever. So here's the recipe: try it and let us know what you think! </p>
+                </div>
             </section>
         </div>
     </main>
     <!--footer-->
-    <footer class="bg-primary text-white d-flex justify-center align-center space-between">
-        <span>a</span>
-        <span>b</span>
+    <footer class="bg-primary text-white">
+        <ul class="small d-flex column justify-center align-center space-between">
+            <h5>2021 Giallo Booleano S.p.a.</h5>
+            <div>Via Tal dei tali, 10 - 88046 Lamezia Terme - VAT 43940293020</div>
+            <ul class="d-flex space-between">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Terms of use</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cookie Policy</a></li>
+            </ul>
+            <a href="#">Disclaimer</a>
+        </ul>
     </footer>
 </body>
 </html>

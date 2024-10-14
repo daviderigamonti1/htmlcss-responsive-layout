@@ -16,6 +16,7 @@
     --color-contrast: #fa961a;
     --color-icon-red: #ea5556;
     --color-icon-blue: #2871f0;
+    --color-grey: rgb(189, 180, 200);
 }
 
 body {
@@ -31,17 +32,82 @@ body {
     margin: 0 auto;
 }
 
+h1 {
+    color: var(--color-contrast);
+    text-shadow: 1px 1px 1px black;
+    font-family: 'Nerko One', cursive;
+    text-transform: uppercase;
+    font-size: 3em;
+}
 
+h3 {
+    text-transform: uppercase;
+    font-size: xx-large;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: large;
+}
+
+ul {
+    list-style: none;
+}
+
+hr {
+    width: 20%;
+    border: 1px solid var(--color-contrast);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 100%;
+}
+
+.img {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.small {
+    font-size: small;
+}
+
+a {
+    color: var(--color-white);
+}
 /*Utilities*/
 
 .bg-white {
-    background-color: var(.bg-white);
+    background-color: var(--color-white);
 }
 
 .bg-primary {
     background-color: var(--color-primary);
 }
 
+.d-none {
+    display: none;
+}
+
+/*Spacer*/
+
+.p-top {
+    padding-top: 20px;
+}
+
+.p-bottom {
+    padding-bottom: 40px;
+}
+
+.p-left {
+    padding-left: 20px;
+}
+
+.p-20 {
+    padding: 20px;
+}
 /*Flex*/
 
 .d-flex {
@@ -56,10 +122,32 @@ body {
     align-items: center;
 }
 
+.column {
+    flex-direction: column;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
 /*Text*/
 
 .text-white {
     color: var(--color-white);
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.text-grey {
+    color: var(--color-grey);
+}
+
+.text-purple {
+    color: var(--color-dark-text);
+    font-weight: 1000;
+    font-size: large;
 }
 
 /*Page*/
@@ -78,20 +166,8 @@ header a {
     text-decoration: none;
 }
 
-h1 {
-    color: var(--color-contrast);
-    text-shadow: 1px 1px 1px black;
-    font-family: 'Nerko One', cursive;
-    text-transform: uppercase;
-    font-size: 3em;
-}
-
-.ads {
-    display: none;
-}
-
 #video {
-    width: 60%;
+    width: 100%;
     aspect-ratio: 16 / 9;
     position: relative;
 }
@@ -102,6 +178,24 @@ h1 {
     display: block;
 }
 
+.logo1 {
+    background-color: var(--color-white);
+    color: var(--color-icon-blue);
+    text-align: center;
+    width: 45px;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+.logo2 {
+    background-color: var(--color-white);
+    color: var(--color-icon-red);
+    text-align: center;
+    width: 45px;
+    line-height: 40px;
+    border-radius: 50%;
+    
+}
 /*Media Query*/
 
 @media screen and (min-width: 576px) {
@@ -112,11 +206,11 @@ h1 {
     main {
         padding: 40px;
     }
-    header.space-between {
+    header.start {
         justify-content: space-between;
     }
-    .ads {
-        display: block;
+    .d-none {
+        display: inline-block;
     }
 }
 
